@@ -15,7 +15,7 @@ Foram registados alguns dados no banco de dados em entidades como Categoria, Cor
 - Criar um banco de dados com nome postgree shopping com { username : postgres, password : 1234 } ou mudar os dados para o seu banco de dados local no ficheiro `src/main/resources/application.yml`
 - `cd shopping`
 - `mvnw clean install -DskipTests`
-- `java -jar target/blog-api-0.0.1-SNAPSHOT.jar`
+- `java -jar target/shopping 0.0.1-SNAPSHOT.jar`
 
 A partir deste momento, seguindo corretamente os passos terá a api correndo no endereço `http://localhost:8081/api/v1/`
 
