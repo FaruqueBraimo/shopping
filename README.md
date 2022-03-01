@@ -8,6 +8,8 @@ Desenvolvida usando spring-boot e PostgreSQL.
 
 Foi usado o `flyway db` é uma ferramenta que se permite garantir a ordem e organização para os scripts SQL que são executados na base de dados, garantindo o controle de versão dos mesmos.
 
+Foram registados alguns dados no banco de dados em entidades como Categoria, Cor, e Marca.
+
 ## Como executar?
 
 - Criar um banco de dados com nome postgree shopping com { username : postgres, password : 1234 } ou mudar os dados para o seu banco de dados local no ficheiro `src/main/resources/application.yml`
