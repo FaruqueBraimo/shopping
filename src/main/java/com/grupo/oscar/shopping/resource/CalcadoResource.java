@@ -25,7 +25,6 @@ import java.util.List;
 @RequiredArgsConstructor
 public class CalcadoResource {
     private final CalcadoService calcadoService;
-    private final CategoriaService categoriaService;
     Logger logger = LoggerFactory.getLogger(CalcadoResource.class);
 
 
@@ -66,7 +65,8 @@ public class CalcadoResource {
     @DeleteMapping("/{id}")
     @ResponseBody
     @ApiOperation("Deletar por id")
-    public void delete(@RequestParam String id ) {
+    public ResponseEntity<?> delete(@RequestParam String id ) {
         calcadoService.delete(id);
+        return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
     }
 }
