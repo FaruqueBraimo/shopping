@@ -39,5 +39,12 @@ public class CategoriaResource {
         return ResponseEntity.ok(categoriaService.getAllCategories());
     }
 
+    @DeleteMapping("/{id}")
+    @ResponseBody
+    @ApiOperation("Deletar por id")
+    public ResponseEntity<?> delete(@RequestParam String id ) {
+        categoriaService.delete(id);
+        return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
+    }
 }
 

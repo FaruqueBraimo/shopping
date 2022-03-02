@@ -36,4 +36,13 @@ public class CorResource {
         return ResponseEntity.ok(corService.getAllCores());
     }
 
+
+    @DeleteMapping("/{id}")
+    @ResponseBody
+    @ApiOperation("Deletar por id")
+    public ResponseEntity<?> delete(@RequestParam String id ) {
+        corService.delete(id);
+        return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
+    }
 }
+
