@@ -4,7 +4,7 @@ API da loja do Grupo Oscar - Challenge
 
 ## REST API
 
-Desenvolvida usando spring-boot e PostgreSQL.
+Desenvolvida usando spring-boot e PostgreSQL. Foram exetados todos os pontos requisitados com mais atencao na entidade Calcado. E com os devidos `testes unitarios`.
 
 Foi usado o `flyway db`, uma ferramenta que se permite garantir a ordem e organização para os scripts SQL que são executados na base de dados, garantindo o controle de versão dos mesmos.
 
