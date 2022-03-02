@@ -8,7 +8,7 @@ Desenvolvida usando spring-boot e PostgreSQL.
 
 Foi usado o `flyway db` é uma ferramenta que se permite garantir a ordem e organização para os scripts SQL que são executados na base de dados, garantindo o controle de versão dos mesmos.
 
-Foram registados alguns dados no banco de dados em entidades como Categoria, Cor, e Marca.
+Foram registados alguns dados no banco de dados em entidades como `Calcado`, `Categoria`, `Cor`, e `Marca` para testes.
 
 ## Como executar?
 
