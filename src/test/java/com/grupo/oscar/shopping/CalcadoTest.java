@@ -63,6 +63,9 @@ public class CalcadoTest {
         calcado.setMarca(marca);
         Assertions.assertThat((calcadoRepository.save(calcado))).isNull();
 
+        Calcado calcadoToTest =  calcadoRepository.save(calcado);
+        Assertions.assertThat(calcadoToTest.getNome()).isEqualTo("Yeezy");
+
     }
 
     @Test
@@ -85,7 +88,7 @@ public class CalcadoTest {
 
     @Test
     @Order(4)
-    @Rollback(value = false)
+    @Rollback(value = true)
     public void deleteCategory(){
 
         Calcado calcadoToDelete = calcadoRepository.findById("a57tu37e-33d6-15c1-8r72-c5yb687733e3").get();
