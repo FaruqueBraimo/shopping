@@ -27,7 +27,7 @@ public class CorImpl  implements  CorService{
     }
 
     @Override
-    public Cor getMarca(String id) {
+    public Cor getCor(String id) {
         return corRepository.getById(id);
     }
 

@@ -10,7 +10,7 @@ import java.util.List;
 public interface CorService {
     Cor create(Cor marca);
     List<Cor> getAllCores();
-    Cor getMarca(String id);
+    Cor getCor(String id);
     Categoria update(Cor cor);
     void delete(String id);
 }
