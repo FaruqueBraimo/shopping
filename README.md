@@ -19,7 +19,8 @@ Foram registados alguns dados no banco de dados em entidades como `Calcado`, `Ca
 
 A partir deste momento, seguindo corretamente os passos terá a api correndo no endereço `http://localhost:8081/api/v1/`
 
-NB:
+## Documentacao
+
 Poderá encontrar uma documentação mais interativa da API no endereço `http://localhost:8081/swagger-ui/`
 
 
