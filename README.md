@@ -12,7 +12,7 @@ Foram registados alguns dados no banco de dados em entidades como `Calcado`, `Ca
 
 ## Como executar?
 
-- Criar um banco de dados com nome postgree shopping com { username : postgres, password : 1234 } ou mudar os dados para o seu banco de dados local no ficheiro `src/main/resources/application.yml`
+- Criar um banco de dados com nome postgree `shopping` com `{ username : postgres, password : 1234 }` ou mudar os dados para o seu banco de dados local no ficheiro `src/main/resources/application.yml`
 - `cd shopping`
 - `mvnw clean install -DskipTests`
 - `java -jar target/shopping 0.0.1-SNAPSHOT.jar`
