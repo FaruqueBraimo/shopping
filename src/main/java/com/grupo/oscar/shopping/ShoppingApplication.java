@@ -12,12 +12,6 @@ import java.util.List;
 @SpringBootApplication
 public class ShoppingApplication {
 
-	@Bean
-	CommandLineRunner runner(CalcadoService calcadoService) {
-		return args -> {
-//			List<Calcado> calcados = calcadoService.getCalcadoByMultipleFields("Adidas 12", 80);
-		};
-	}
 
 	public static void main(String[] args) {
 
