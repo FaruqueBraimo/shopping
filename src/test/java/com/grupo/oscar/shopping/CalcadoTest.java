@@ -10,7 +10,6 @@ import com.grupo.oscar.shopping.repository.CorRepository;
 import com.grupo.oscar.shopping.repository.MarcaRepository;
 import lombok.RequiredArgsConstructor;
 import org.assertj.core.api.Assertions;
-import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
@@ -19,6 +18,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.test.annotation.Rollback;
+import org.springframework.util.Assert;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -61,7 +61,7 @@ public class CalcadoTest {
         calcado.setCategoria(categoria);
         calcado.setCor(cor);
         calcado.setMarca(marca);
-        Assert.assertNotNull(calcadoRepository.save(calcado));
+        Assertions.assertThat((calcadoRepository.save(calcado))).isNull();
 
     }
 
