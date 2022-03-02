@@ -6,7 +6,7 @@ API da loja do Grupo Oscar - Challenge
 
 Desenvolvida usando spring-boot e PostgreSQL.
 
-Foi usado o `flyway db` é uma ferramenta que se permite garantir a ordem e organização para os scripts SQL que são executados na base de dados, garantindo o controle de versão dos mesmos.
+Foi usado o `flyway db`, uma ferramenta que se permite garantir a ordem e organização para os scripts SQL que são executados na base de dados, garantindo o controle de versão dos mesmos.
 
 Foram registados alguns dados no banco de dados em entidades como `Calcado`, `Categoria`, `Cor`, e `Marca` para testes.
 
@@ -21,12 +21,6 @@ A partir deste momento, seguindo corretamente os passos terá a api correndo no 
 
 NB:
 Poderá encontrar uma documentação mais interativa da API no endereço `http://localhost:8081/swagger-ui/`
-
-
-## Front End
-
-- Segue o link de uma pequena implementacao de algumas funcionalidades da API 
-- 
 
 
 
